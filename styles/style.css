@@ -237,12 +237,12 @@ img {
 }
 
 header {
-  background: pink;
+  background: #F7F0F5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 2px solid blue;
-  height: 70vh;
+  height: 90vh;
   width: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -254,7 +254,6 @@ header {
 
 header .teacup {
   width: 30%;
-  border: 2px solid blue;
 }
 
 header .wrapper {
@@ -270,10 +269,10 @@ header .wrapper {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background: #433633;
 }
 
 .blackBoard {
-  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,14 +284,29 @@ header .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 5px solid white;
+  margin: 20px;
 }
 
 h1, p {
   border: 2px solid yellow;
 }
 
+header p, header a {
+  margin-top: 50px;
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 h1 {
   font-family: "Pompiere", cursive;
   font-size: 7rem;
+  text-align: center;
+}
+
+header a {
+  background: blue;
   text-align: center;
 }
