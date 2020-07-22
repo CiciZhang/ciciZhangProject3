@@ -17,6 +17,10 @@ html {
     font-size: 125%;
     font-family: $textFont;
     color: #F7F0F5;
+    background-color: $darkestColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img {
