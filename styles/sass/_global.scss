@@ -8,7 +8,7 @@ $textFont: 'Pangolin', cursive;
 $lightestColor: #F7F0F5;
 $lightMidColor: #DECBB7;
 $middleColor: #8F857D;
-$midDarkColor:#5C5552;
+$accentColor:#fa7000;
 $darkestColor: #433633;
 
 
@@ -27,3 +27,41 @@ img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    text-align: center;
+  
+    .button {
+        background: $accentColor;
+        height: 50px;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $textFont;
+        color: $lightestColor;
+        position: relative;
+    }
+}
+
+.button:before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: $darkestColor;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-radius: 0 0 100% 0;
+}
+
+.button:after {
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: $darkestColor;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    border-radius: 100% 0 0 0;
+}

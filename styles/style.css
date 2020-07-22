@@ -247,6 +247,51 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+a .button {
+  background: #fa7000;
+  height: 50px;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Pangolin", cursive;
+  color: #F7F0F5;
+  position: relative;
+}
+
+.button:before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background: #433633;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  border-radius: 0 0 100% 0;
+}
+
+.button:after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background: #433633;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 100% 0 0 0;
+}
+
 header {
   background: #F7F0F5;
   display: -webkit-box;
@@ -283,7 +328,6 @@ header .wrapper {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background: #433633;
-  border: 2px solid blue;
 }
 
 .blackBoard {
@@ -314,11 +358,6 @@ header p, header a {
 h1 {
   font-family: "Pompiere", cursive;
   font-size: 7rem;
-  text-align: center;
-}
-
-header a {
-  background: blue;
   text-align: center;
 }
 

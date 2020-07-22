@@ -17,7 +17,6 @@ header {
         flex-direction: column;
         justify-content: space-evenly;
         background: #433633;
-        border: 2px solid blue;
     }
 }
 
@@ -44,10 +43,10 @@ h1 {
     text-align: center;
 }
 
-header a {
-    background: blue;
-    text-align: center;
-}
+// header a {
+//     // background: blue;
+//     text-align: center;
+// }
 
 .blackBoard::before {
     content: "";
