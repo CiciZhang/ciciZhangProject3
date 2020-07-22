@@ -228,14 +228,71 @@ textarea {
 
 html {
   font-size: 125%;
+  font-family: "Pangolin", cursive;
+  color: white;
+}
+
+img {
+  width: 100%;
 }
 
 header {
+  background: pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 2px solid blue;
+  height: 70vh;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .teacup {
+  width: 30%;
+  border: 2px solid blue;
 }
 
 header .wrapper {
   border: 2px solid red;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.blackBoard {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1, p {
+  border: 2px solid yellow;
+}
+
+h1 {
+  font-family: "Pompiere", cursive;
+  font-size: 7rem;
+  text-align: center;
 }

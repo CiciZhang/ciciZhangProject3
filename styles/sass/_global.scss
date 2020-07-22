@@ -1,3 +1,17 @@
+////////////////
+// Variables //
+///////////////
+
+$titleFont: 'Pompiere', cursive;
+$textFont: 'Pangolin', cursive;
+
 html {
     font-size: 125%;
+    font-family: $textFont;
+    color: white;
 }
+
+img {
+    width: 100%;
+}
+
