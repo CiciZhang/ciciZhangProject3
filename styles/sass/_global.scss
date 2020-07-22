@@ -5,10 +5,18 @@
 $titleFont: 'Pompiere', cursive;
 $textFont: 'Pangolin', cursive;
 
+$lightestColor: #F7F0F5;
+$lightMidColor: #DECBB7;
+$middleColor: #8F857D;
+$midDarkColor:#5C5552;
+$darkestColor: #433633;
+
+
+
 html {
     font-size: 125%;
     font-family: $textFont;
-    color: white;
+    color: #F7F0F5;
 }
 
 img {
