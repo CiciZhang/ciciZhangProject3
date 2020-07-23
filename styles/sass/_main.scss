@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    justify-content: center;
+    // background: black;
+    .displayBox {
+    // margin: 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    width: 70%;
+    }
+}
+
+input, label {
+    width: 70%;
+}
+
+// button size change a not .button
+
+main a {
+    margin: 50px;
+    width: 70%;
+}
