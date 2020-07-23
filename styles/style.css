@@ -420,6 +420,10 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .displayBox {
@@ -436,7 +440,6 @@ main .displayBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid red;
   width: 70%;
 }
 
@@ -444,7 +447,20 @@ input, label {
   width: 70%;
 }
 
+label {
+  margin-top: 50px;
+  text-align: center;
+}
+
+input {
+  background-color: white;
+  height: 50px;
+  border: 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
 main a {
   margin: 50px;
-  width: 70%;
+  width: 50%;
 }
