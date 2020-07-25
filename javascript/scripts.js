@@ -12,6 +12,13 @@ teacup.stringToWords = myStr => myStr.split(" ")
 teacup.getChosenPhrase = () => {
     const arr = teacup.stringToWords(teacup.userInput)
     const word = arr[0]
+    if (word === ''){
+        return 'There is a huge spaaaaaaaaaaaaaace'
+    } else if (!((word.toLowerCase() === "will") || (word.toLowerCase() === "can"))) {
+        console.log(typeof word.toLowerCase())
+        return 'I am confused.'
+    } 
+
     teacup.phrases = [
         "You got this!",
         `YES YOU ${word.toUpperCase()}`,
@@ -21,31 +28,18 @@ teacup.getChosenPhrase = () => {
         "KEEP GOING!!!"
     ]
     const ranIndex = Math.floor(Math.random() * teacup.phrases.length)
+    // 
+    
     return teacup.phrases[ranIndex]
 }
-// console.log(teacup.ranNum)
-
-//Using teacup.ranNum 
-// teacup.chosenPhrase = teacup.phrases[teacup.ranNum]
-
-//Write a function that takes a chosen phrase, if it has a replaceable portion replace with the given word. 
-// teacup.generatePhrase = (myPhrase, word) => {
-
-// }
-
-
-
-
 
 // listener() method waits for a click then it adds the user's input to the history box before clearing the input field.
 teacup.listener = function () {
     $('#submitButton').on('click', function (event) {
         event.preventDefault()
         teacup.userInput = $('#userInput').val()
+        // error function here 
         const myFinalPhrase = teacup.getChosenPhrase(teacup.phrases)
-        // console.log(myFinalPhrase)
-        // WRITE A FUNCTION THAT PUTS FIRST WORD INTO TEACUP.PHRASES. 
-       
         $('.result').append(`<p>${teacup.userInput}</p> <p>${myFinalPhrase}</p>`)
       
         teacup.clearInput()
