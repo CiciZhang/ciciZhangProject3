@@ -1,7 +1,5 @@
 const teacup = {}
 
-
-
 // clearInput() method clears the user input
 teacup.clearInput = () => $('#userInput').val("")
 
@@ -13,9 +11,8 @@ teacup.getChosenPhrase = () => {
     const arr = teacup.stringToWords(teacup.userInput)
     const word = arr[0]
     if (word === ''){
-        return 'There is a huge spaaaaaaaaaaaaaace'
+        return 'Spaaaaaaaaaaaaaace'
     } else if (!((word.toLowerCase() === "will") || (word.toLowerCase() === "can"))) {
-        console.log(typeof word.toLowerCase())
         return 'I am confused.'
     } 
 
@@ -25,7 +22,9 @@ teacup.getChosenPhrase = () => {
         `I'm sure you ${word.toLowerCase()}, believe in yourself!`,
         "Believe in the me who believes in you.",
         `Yes you ${word.toLowerCase()} but please remember to take care of yourself!`,
-        "KEEP GOING!!!"
+        "KEEP GOING!!!",
+        "JUST DO IT!",
+        "NEVER GIVE UP!"
     ]
     const ranIndex = Math.floor(Math.random() * teacup.phrases.length)
     // 
@@ -45,8 +44,6 @@ teacup.listener = function () {
         teacup.clearInput()
     })
 } 
-
-
 
 teacup.init = () => {
     teacup.listener()

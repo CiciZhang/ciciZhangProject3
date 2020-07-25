@@ -10,8 +10,40 @@ main {
         justify-content: center;
         align-items: center;
         // border: 5px solid $lightestColor;
+        position: relative;
         width: 70%;
+        border: 5px solid $lightestColor;
+        .result {
+            margin-bottom: 50px;
+        }
     }
+}
+
+.displayBox::before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: $darkestColor;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-radius: 0 0 100% 0;
+    border-right: 5px solid $lightestColor;
+    border-bottom: 5px solid $lightestColor;
+}
+
+.displayBox::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: $darkestColor;
+    // background: white;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    border-radius: 100% 0 0 0;
+    border-left: 5px solid $lightestColor;
+    border-top: 5px solid $lightestColor;
 }
 
 input, label {
@@ -25,7 +57,7 @@ label {
 
 input {
     // background: $darkestColor;
-    background-color: white;
+    background-color: $lightestColor;
     height: 50px;
     border: 0;
     margin-top: 50px;
@@ -38,4 +70,10 @@ input {
 main a {
     margin: 50px;
     width: 50%;
+}
+
+.result {
+    max-width: 70%;
+    max-height: 200px;
+    overflow-x: auto;
 }

@@ -440,7 +440,39 @@ main .displayBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   width: 70%;
+  border: 5px solid #F7F0F5;
+}
+
+main .displayBox .result {
+  margin-bottom: 50px;
+}
+
+.displayBox::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background: #433633;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  border-radius: 0 0 100% 0;
+  border-right: 5px solid #F7F0F5;
+  border-bottom: 5px solid #F7F0F5;
+}
+
+.displayBox::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background: #433633;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 100% 0 0 0;
+  border-left: 5px solid #F7F0F5;
+  border-top: 5px solid #F7F0F5;
 }
 
 input, label {
@@ -453,7 +485,7 @@ label {
 }
 
 input {
-  background-color: white;
+  background-color: #F7F0F5;
   height: 50px;
   border: 0;
   margin-top: 50px;
@@ -463,4 +495,10 @@ input {
 main a {
   margin: 50px;
   width: 50%;
+}
+
+.result {
+  max-width: 70%;
+  max-height: 200px;
+  overflow-x: auto;
 }
