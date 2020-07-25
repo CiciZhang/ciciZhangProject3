@@ -413,6 +413,15 @@ h1 {
   border-top: 5px solid #F7F0F5;
 }
 
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+  }
+  body {
+    font-size: 0.7rem;
+  }
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
