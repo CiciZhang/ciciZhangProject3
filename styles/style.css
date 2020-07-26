@@ -511,6 +511,43 @@ main a {
   overflow-x: auto;
 }
 
+footer {
+  background: #DECBB7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0px;
+  color: #fa7000;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer ul li {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+nav {
+  width: 50%;
+}
+
 @media (max-width: 800px) {
   h1 {
     font-size: 3rem;

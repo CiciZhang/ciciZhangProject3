@@ -1,0 +1,23 @@
+footer {
+    background: $lightMidColor;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    color: $accentColor;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+nav {
+    width: 50%;
+}
