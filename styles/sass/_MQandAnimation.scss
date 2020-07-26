@@ -1,0 +1,57 @@
+//////////////////
+// MEDIA QUERY //
+/////////////////
+
+@media (max-width:800px){
+    h1 {
+        font-size: 3rem;
+    }
+    body {
+        font-size: 0.7rem;
+    }
+    header .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+    main .displayBox {
+        border: 0px solid $darkestColor;
+        width: 100%;
+        max-width: 100%;
+    }
+    .displayBox::before, 
+    .displayBox::after {
+        display: none;
+    }
+
+    input {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 1155px){
+      .teacup {
+        animation: none !important;
+    }
+}
+
+///////////////
+// ANIMATION //
+///////////////
+
+@keyframes hop {
+    25% {
+        padding-bottom: 100px;
+    }
+
+    50% {
+        rotate:(10deg)
+    }
+
+    75%{
+        padding-bottom: 50px;
+    }
+}
+
+.teacup {
+    animation: hop 3s linear infinite;
+}
