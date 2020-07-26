@@ -1,7 +1,6 @@
 main {
     display: flex;
     justify-content: center;
-    // background: black;
     height: 100vh;
     align-items: center;
     .displayBox {
@@ -36,7 +35,6 @@ main {
     height: 50px;
     width: 50px;
     background: $darkestColor;
-    // background: white;
     position: absolute;
     bottom: -5px;
     right: -5px;
@@ -55,16 +53,12 @@ label {
 }
 
 input {
-    // background: $darkestColor;
     background-color: $lightestColor;
     height: 50px;
     border: 0;
     margin-top: 50px;
-    // padding-left: 50px;
     text-align: center;
 }
-
-// button size change a not .button
 
 main a {
     margin: 50px;

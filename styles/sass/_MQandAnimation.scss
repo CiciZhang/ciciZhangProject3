@@ -47,7 +47,9 @@
             text-align: center;
         }
     }
-  
+    .animatedBox div{
+        display: none;
+    }
 }
 
 @media (max-width: 1155px){
@@ -56,9 +58,9 @@
     }
 }
 
-///////////////
-// ANIMATION //
-///////////////
+///////////////////
+// CUP ANIMATION //
+///////////////////
 
 @keyframes hop {
     25% {
@@ -76,4 +78,86 @@
 
 .teacup {
     animation: hop 3s linear infinite;
+}
+
+///////////////////
+// BOX ANIMATION //
+///////////////////
+
+// Box animation referenced from: https://www.youtube.com/watch?v=qx7pSLjLNQA 
+// specifically I only referenced HOW it was done but the code was not copied.
+
+header {
+    position: relative;
+}
+
+.animatedBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border: 10px solid rgba(255, 208, 119,0.5);
+        z-index: 0;
+    }
+}
+
+.animatedBox div:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation: anibox 10s linear infinite;
+}
+
+.animatedBox div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: anibox 5s linear infinite;
+}
+
+.animatedBox div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: anibox 9s linear infinite;
+}
+
+.animatedBox div:nth-child(4) {
+    top: 50%;
+    left: 80%;
+    animation: anibox 5s linear infinite;
+}
+
+.animatedBox div:nth-child(5) {
+    top: 81%;
+    left: 4%;
+    animation: anibox 4s linear infinite;
+}
+
+.animatedBox div:nth-child(6) {
+    top: 81%;
+    left: 70%;
+    animation: anibox 6s linear infinite;
+}
+
+.animatedBox div:nth-child(7) {
+    top: 4%;
+    left: 80%;
+    animation: anibox 7s linear infinite;
+}
+
+@keyframes anibox {
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-90px) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+        opacity: 0;
+    }
 }

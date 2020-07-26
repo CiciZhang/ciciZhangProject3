@@ -13,9 +13,11 @@ footer {
         li {
             font-size: 3rem;
             margin-bottom: 20px;
+            i {
+                color: $accentColor;
+            }
         }
     }
-
 }
 
 nav {

@@ -9,6 +9,7 @@ header {
     .teacup {
       max-width: 30%;
       margin: 30px;
+      z-index: 1;
     }
     .wrapper {
         margin: 10px;
@@ -17,6 +18,7 @@ header {
         flex-direction: column;
         justify-content: space-evenly;
         background: #433633;
+        z-index: 1;
     }
 }
 
