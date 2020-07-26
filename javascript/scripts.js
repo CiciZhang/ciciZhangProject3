@@ -51,7 +51,6 @@ teacup.listener = function () {
         // error function here 
         const myFinalPhrase = teacup.getChosenPhrase(teacup.phrases)
         $('.result').append(`<p>${teacup.userInput}</p> <p>${myFinalPhrase}</p>`)
-      
         teacup.clearInput()
     })
 } 
