@@ -555,9 +555,16 @@ nav {
   body {
     font-size: 0.7rem;
   }
+  header {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   header .wrapper {
-    width: 100%;
-    margin: 0;
+    margin: 0px;
+  }
+  header .teacup {
+    max-width: 70%;
   }
   main .displayBox {
     border: 0px solid #433633;
@@ -568,8 +575,29 @@ nav {
   .displayBox::after {
     display: none;
   }
+  main {
+    height: inherit;
+  }
   input {
     font-size: 0.5rem;
+  }
+  footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer p {
+    width: 70%;
+    text-align: center;
   }
 }
 

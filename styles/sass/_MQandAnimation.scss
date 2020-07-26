@@ -9,9 +9,14 @@
     body {
         font-size: 0.7rem;
     }
-    header .wrapper {
-        width: 100%;
-        margin: 0;
+    header {
+        align-items: flex-start;
+        .wrapper {
+        margin: 0px;
+        }
+        .teacup{
+            max-width: 70%;
+        }
     }
     main .displayBox {
         border: 0px solid $darkestColor;
@@ -22,10 +27,27 @@
     .displayBox::after {
         display: none;
     }
+    main {
+        height: inherit;
+    }
 
     input {
         font-size: 0.5rem;
     }
+    footer {
+        ul {
+        flex-direction: column;
+            li {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        p {
+            width: 70%;
+            text-align: center;
+        }
+    }
+  
 }
 
 @media (max-width: 1155px){

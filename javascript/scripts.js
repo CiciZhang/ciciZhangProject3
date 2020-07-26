@@ -10,8 +10,19 @@ teacup.stringToWords = myStr => myStr.split(" ")
 teacup.getChosenPhrase = () => {
     const arr = teacup.stringToWords(teacup.userInput)
     const word = arr[0]
+    const containsDie = /die/i
+    const containsLMAO = /lmao/i 
+    const containsDio = /wr{1,20}y/i
     if (word === ''){
         return 'Spaaaaaaaaaaaaaace'
+    } else if (teacup.userInput === "Daniel Chen"){
+        return "is a nippu nippu warrior"
+    } else if (containsDio.test(teacup.userInput)){
+        return "ZA WARUDO"
+    } else if (containsLMAO.test(teacup.userInput)){
+        return "BIG草"
+    } else if (containsDie.test(teacup.userInput)){
+        return "Please don't say that about yourself. You are needed and people love you."
     } else if (!((word.toLowerCase() === "will") || (word.toLowerCase() === "can"))) {
         return 'I am confused.'
     } 
