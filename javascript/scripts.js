@@ -45,7 +45,7 @@ teacup.getChosenPhrase = () => {
 
 // listener() method waits for a click then it adds the user's input to the history box before clearing the input field.
 teacup.listener = function () {
-    $('#submitButton').on('click', function (event) {
+    $('.displayBox').on('submit', function (event) {
         event.preventDefault()
         teacup.userInput = $('#userInput').val()
         // error function here 
